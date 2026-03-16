@@ -3,21 +3,161 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgentAIvia</title>
+    <title>AIVIA LLC — AI Solutions for Business</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, sans-serif; color: #333; display: flex; flex-direction: column; min-height: 100vh; }
-        main { flex: 1; display: flex; align-items: center; justify-content: center; padding: 2rem; }
-        h1 { font-size: 2rem; }
-        footer { background: #f5f5f5; padding: 2rem; text-align: center; font-size: 0.85rem; color: #666; line-height: 1.6; border-top: 1px solid #ddd; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            color: #e0e0e0;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            background: #0a0e1a;
+        }
+        header {
+            padding: 2rem 2rem 0;
+            text-align: center;
+        }
+        .logo {
+            font-size: 1.2rem;
+            font-weight: 700;
+            letter-spacing: 0.3em;
+            color: #6cb4ee;
+            text-transform: uppercase;
+        }
+        main {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+        }
+        .hero {
+            max-width: 720px;
+            text-align: center;
+        }
+        .hero h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            line-height: 1.2;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, #6cb4ee, #a78bfa);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        .hero .tagline {
+            font-size: 1.15rem;
+            color: #94a3b8;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1.5rem;
+            text-align: left;
+            margin-bottom: 2.5rem;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.04);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 12px;
+            padding: 1.5rem;
+        }
+        .card h3 {
+            font-size: 1rem;
+            color: #6cb4ee;
+            margin-bottom: 0.5rem;
+        }
+        .card p {
+            font-size: 0.9rem;
+            color: #94a3b8;
+            line-height: 1.5;
+        }
+        .mission {
+            background: rgba(108, 180, 238, 0.06);
+            border: 1px solid rgba(108, 180, 238, 0.15);
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            text-align: left;
+        }
+        .mission h2 {
+            font-size: 1.1rem;
+            color: #a78bfa;
+            margin-bottom: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 600;
+        }
+        .mission p {
+            font-size: 1rem;
+            color: #cbd5e1;
+            line-height: 1.7;
+        }
+        .glow {
+            position: fixed;
+            width: 500px;
+            height: 500px;
+            border-radius: 50%;
+            filter: blur(120px);
+            opacity: 0.12;
+            pointer-events: none;
+            z-index: -1;
+        }
+        .glow-1 { background: #6cb4ee; top: -100px; left: -100px; }
+        .glow-2 { background: #a78bfa; bottom: -150px; right: -100px; }
+        footer {
+            background: rgba(255, 255, 255, 0.02);
+            padding: 2rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #475569;
+            line-height: 1.6;
+            border-top: 1px solid rgba(255, 255, 255, 0.06);
+        }
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 2rem; }
+            .cards { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
+    <div class="glow glow-1"></div>
+    <div class="glow glow-2"></div>
+    <header>
+        <div class="logo">AIVIA</div>
+    </header>
     <main>
-        <h1>AgentAIvia</h1>
+        <div class="hero">
+            <h1>Intelligent Solutions for Modern Business</h1>
+            <p class="tagline">AIVIA LLC designs and builds AI-powered tools and systems that help businesses work smarter — automating repetitive tasks, surfacing actionable insights, and enabling teams to focus on what matters most.</p>
+
+            <div class="mission">
+                <h2>Our Mission</h2>
+                <p>To empower businesses with practical AI solutions that streamline operations, unlock growth, and turn complexity into competitive advantage. Every business deserves access to the transformative power of AI, without the complexity. We bridge the gap between cutting-edge technology and real-world business needs, delivering solutions that are effective, accessible, and built to scale.</p>
+            </div>
+
+            <div class="cards">
+                <div class="card">
+                    <h3>Automation</h3>
+                    <p>Streamline workflows and eliminate repetitive tasks so your team can focus on high-value work.</p>
+                </div>
+                <div class="card">
+                    <h3>Insights</h3>
+                    <p>Turn your data into actionable intelligence that drives smarter, faster decisions.</p>
+                </div>
+                <div class="card">
+                    <h3>Growth</h3>
+                    <p>Scale your operations with AI systems that grow alongside your business.</p>
+                </div>
+            </div>
+        </div>
     </main>
     <footer>
-        <p>No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
+        <p>&copy; 2026 AIVIA LLC. All rights reserved.</p>
+        <p style="margin-top: 0.75rem;">No mobile information will be shared with third parties/affiliates for marketing/promotional purposes. All other categories exclude text messaging originator opt-in data and consent; this information will not be shared with any third parties.</p>
     </footer>
 </body>
 </html>
